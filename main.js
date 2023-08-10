@@ -26,6 +26,9 @@ log_in.remove();
 function log_out() {
  userName.innerText = localStorage.getItem("name");
   localStorage.clear();
+  location.href = "./index.html"
+
+
 }
 
 function LogIn() {
@@ -47,10 +50,7 @@ function LogIn() {
     location.href = "./bloog.html";
     localStorage.setItem("name", name.value);
 
-    //  if(localStorage.getItem("name" !== name.value)){
-    //      location.href = "http://127.0.0.1:5500/index.html"
 
-    //     }
     check.style.display = "none";
     checking.style.display = "none";
   } else if (name.value === "" && pass.value === "") {
