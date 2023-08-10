@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bloog</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ck editor -->
+
+    <script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
+</head>
+
+<body>
+    <!-- Nav Start -->
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                <span id="user-name"></span>
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="https://github.com/Dimah-Aldossari" target="_blank">Github</a>
+            <a id="log_in" href="./index.html">LogIn</a>
+            <a href="https://www.linkedin.com/in/dimah-al-dossari/" target="_blank">LinkedIn</a>
+            <a onclick="log_out()" style="color:rgba(255, 0, 0, 0.641)" href="/index.html">Logout</a>
+
+        </div>
+    </div>
+    <!-- Nav End -->
+    <!-- section 2 Start -->
+    <div class="blog-img">
+        <img src="https://images.pexels.com/photos/904616/pexels-photo-904616.jpeg?auto=compress&cs=tinysrgb&w=1600">
+    </div>
+    <!-- section 2 End -->
+
+    <!-- welcome section Start -->
+    <h2 class="welcome-text">Welcom To Dimah Bloog</h2>
+
+    <p class="welcome-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus quia ipsum sunt
+        incidunt, cumque ipsa
+        aspernatur id facilis tenetur culpa quisquam voluptate iure, aut dolore voluptatem delectus quam quas!</p>
+    <!-- welcome section End -->
+    <!-- CKEDITOR -->
+
+    <div class="blog-container">
+        <div class="editor1">
+            <textarea name="textarea"></textarea>
+            <p id="editor-content-copy"></p>
+
+        </div>
+
+
+    </div>
+    <div class="btn-post">
+        <button id="postButton">Post</button>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
