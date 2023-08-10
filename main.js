@@ -26,8 +26,7 @@ log_in.remove();
 function log_out() {
   userName.innerText = localStorage.getItem("name");
   localStorage.clear();
-  location.href =
-    "file:///D:/Javascript_botcamp/week3JavaScriptDoom2/CKEDITOR-main/index.html";
+  location.href = "http://127.0.0.1:5500/index.html";
 }
 
 function LogIn() {
