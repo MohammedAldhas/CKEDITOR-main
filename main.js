@@ -26,7 +26,6 @@ log_in.remove();
 function log_out() {
   userName.innerText = localStorage.getItem("name");
   localStorage.clear();
-  location.href = "./index.html"
 }
 
 function LogIn() {
