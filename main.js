@@ -24,11 +24,10 @@ userName.innerText = localStorage.getItem("name");
 // LogIn
 log_in.remove();
 function log_out() {
- userName.innerText = localStorage.getItem("name");
+  userName.innerText = localStorage.getItem("name");
   localStorage.clear();
-  location.href = "./index.html"
-
-
+  location.href =
+    "file:///D:/Javascript_botcamp/week3JavaScriptDoom2/CKEDITOR-main/index.html";
 }
 
 function LogIn() {
@@ -50,7 +49,6 @@ function LogIn() {
     location.href = "./bloog.html";
     localStorage.setItem("name", name.value);
 
-
     check.style.display = "none";
     checking.style.display = "none";
   } else if (name.value === "" && pass.value === "") {
@@ -66,9 +64,6 @@ function LogIn() {
 
 // Bloog
 
-
-if(localStorage.name === undefined){
-    location.href = "http://127.0.0.1:5500/index.html"
-
+if (localStorage.name === undefined) {
+  location.href = "http://127.0.0.1:5500/index.html";
 }
-
