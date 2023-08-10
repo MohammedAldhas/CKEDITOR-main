@@ -24,7 +24,7 @@ userName.innerText = localStorage.getItem("name");
 // LogIn
 log_in.remove();
 function log_out() {
-  userName.innerText = localStorage.getItem("name");
+//   userName.innerText = localStorage.getItem("name");
   localStorage.clear();
 }
 
@@ -63,5 +63,5 @@ function LogIn() {
 // Bloog
 
 if (localStorage.name === undefined) {
-  location.href = "http://127.0.0.1:5500/index.html";
+  location.href = "./index.html";
 }
