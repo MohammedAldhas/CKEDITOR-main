@@ -6,7 +6,7 @@ let postButton = document.getElementById("postButton");
 
 postButton.addEventListener("click", () => {
   //contentCopy.innerHTML = CKEDITOR.instances.editor1.document.getBody().getText(); // For plain text
-  contentCopy.innerHTML = CKEDITOR.instances.textarea.getData(); // For formatted text
+  contentCopy.innerHTML = CKEDITOR.instances.textarea.getData(); // For formatted tex
 
   let btn = document.createElement("button");
   btn.innerText = "delete";
